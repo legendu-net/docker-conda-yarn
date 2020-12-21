@@ -15,7 +15,7 @@ Additional: Anaconda Python 3 minimal and yarn.
 ## Usage in Linux/Unix
 
 ```
-docker run -d \
+docker run -d --init \
     --log-opt max-size=50m \
     -e DOCKER_USER=`id -un` \
     -e DOCKER_USER_ID=`id -u` \
